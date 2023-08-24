@@ -12,7 +12,7 @@ root = tk.Tk()
 
 folder1 = '' 
 folder2 = ''
-selected_sound_file = None  # To store the selected sound file
+selected_sound_file = None
 
 def select_folder1():
     global folder1
@@ -61,7 +61,7 @@ def stop():
     
 button1 = tk.Button(text="Select Folder 1", command=select_folder1)
 button2 = tk.Button(text="Select Folder 2", command=select_folder2)  
-select_sound_button = tk.Button(text="Select Sound", command=select_sound_file)  # New button for sound selection
+select_sound_button = tk.Button(text="Select Sound", command=select_sound_file)
 start_button = tk.Button(text="Start", command=start)
 stop_button = tk.Button(text="Stop", command=stop)
 
@@ -70,7 +70,7 @@ label.pack()
 
 button1.pack()
 button2.pack()
-select_sound_button.pack()  # Pack the sound selection button
+select_sound_button.pack()
 start_button.pack()  
 stop_button.pack()
 
